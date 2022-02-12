@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid6</title>
+
+</head>
+<body>
+  
+    <style>
+
+body{
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+        
+    
+    }
+
+    .grid-container{
+        display: grid;    
+        min-height: 100vh;
+        grid-template-rows: 30vh 70vh ;
+        grid-template-columns: 20vh 160vh 20vh;
+    
+
+         grid-template-areas: 
+
+           'h h h'
+           'm a g'
+           
+    
+        }
+    
+    
+    header{
+       width: 204vh;
+       background: green;
+       grid-area: h;
+    }
+
+main{
+    background: rgb(15, 15, 17);
+    grid-area:m ;
+
+
+
+}
+    aside{  
+        width: 160vh;
+    background: rgb(119, 93, 94);
+    grid-area: a;
+     
+
+
+    }
+
+   footer{
+
+    background: rgb(42, 33, 126);
+    grid-area: f;
+
+   }
+ 
+   div {
+
+    background: rgb(126, 33, 87);
+    grid-area: g;
+
+
+   }
+
+
+</style>
+
+<div class="grid-container">
+        <header></header>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+        <div></div>
+
+    </div>
+
+
+</body>
+</html>
